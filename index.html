@@ -1,0 +1,548 @@
+<!DOCTYPE html>
+    <html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+        <!--=============== FAVICON ===============-->
+        <link rel="shortcut icon" href="assets/img/xmas/Cooking.png" type="image/x-icon">
+
+        <!--=============== BOXICONS ===============-->
+        <link rel="stylesheet" href="https://unpkg.com/boxicons@latest/css/boxicons.min.css">
+
+        <!--=============== SWIPER CSS ===============--> 
+        <link rel="stylesheet" href="assets/css/swiper-bundle.min.css">
+
+        <!--=============== CSS ===============-->
+        <link rel="stylesheet" href="assets/css/styles.css">
+
+
+        <title>Supermercado Luisa Blanco Mula</title>
+    </head>
+    <body>
+        <!--==================== HEADER ====================-->
+        <header class="header" id="header">
+            <nav class="nav container">
+                <a href="#" class="nav__logo">
+                    <img src="assets/img/xmas/Cooking.png" alt="" class="nav__logo-img">Xmas Super
+                </a>
+                <div class="nav__menu" id="nav-menu">
+                    <ul class="nav__list">
+                        <li class="nav__item">
+                            <a href="#home" class="nav__link">Home</a>
+                        </li>
+                        <li class="nav__item">
+                            <a href="#super" class="nav__link">Realtime</a>
+                        </li>
+                        <li class="nav__item">
+                            <a href="#promociones" class="nav__link">Promos</a>
+                        </li>
+                        <li class="nav__item">
+                            <a href="#new" class="nav__link">Novedades</a>
+                        </li>
+                        <li class="nav__item">
+                            <a href="#gift" class="nav__link">Destacados</a>
+                        </li>
+                        <li class="nav__item">
+                            <a href="#categorias" class="nav__link">Categorías</a>
+                        </li>
+                        <li class="nav__item">
+                            <a href="#giving" class="nav__link">Regalos sorpresa</a>
+                        </li>
+                        <li class="nav__item">
+                            <a href="#celebrate" class="nav__link">Colabora</a>
+                        </li>
+                        <li class="nav__item">
+                            <a href="#message" class="nav__link">Suscribete</a>
+                        </li>
+                    </ul>
+
+                    <div class="nav__close" id="nav-close">
+                        <i class='bx bx-x'></i>
+                    </div>
+                    <img src="assets/img/xmas/Cooking_2.png" alt="" class="nav__img">
+                </div>
+                <div class="nav__btns">
+                    <!-- Theme change button -->
+                    <i class='bx bx-moon change-theme' id="theme-button"></i>
+
+                    <!-- Toggle button -->
+                    <div class="nav__toggle" id="nav-toggle">
+                        <i class='bx bx-grid-alt' ></i>
+                    </div>
+                </div>
+            </nav>
+        </header>
+
+        <!--==================== MAIN ====================-->
+        <main class="main">
+            <!--==================== HOME ====================-->
+            <section class="home" id="home">
+                <div class="home__container container grid">
+                    <img src="assets/img/xmas/Snowman.png" alt="" class="home__img">
+
+                    <div class="home__data">
+                        <h1 class="home__title">
+                            ¡Ya es navidad! <br> Descubre todas nuestras novedades
+                        </h1>
+                        <p class="home__description">
+                            En Louise SP te traemos nuestros mejores productos a precios inolvidables. Además, ahora puedes<br>
+                            echarle un vistazo al estado actual de nuestras cajas y prevenir aglomeraciones. 
+                            <br> Este año, celebremos la navidad como se debe.
+                        </p>
+                        <a href="#new" class="button">Novedades</a>
+                        <a href="#promociones" class="button">Promociones</a>
+                    </div>
+                </div>
+            </section>
+            <!--==================== SUPERMERCADO ====================-->
+            <section class="supermarket section container" id="super">
+                <h2 class="section__title">
+                    Actividad en tiempo real
+                </h2>
+                <div class="supermarket__container grid">
+                    <div id="divAbreCierraSuper" class="supermarket__buttons-abrirCerrar"></div>
+                    <div class="supermarket__boxes-container">
+                        <!-- CAJA 1 -->
+                        <div class="supermarket__caja-abierta" id="caja1">
+                            <h3 class="supermarket__title">Caja 1</h3>
+                            <p class="supermarket__description" id="caja1-id"></p>
+
+                            <h3 class="supermarket__title">Estado </h3>
+                            <p class="supermarket__description" id="caja1-abierta"></p>
+
+                            <h3 class="supermarket__title">Saturación </h3>
+                            <p class="supermarket__description" id="caja1-libre"></p>
+
+                            <h3 class="supermarket__title">Cola </h3>
+                            <p class="supermarket__description" id="caja1-cola"></p>
+
+                            <h3 class="supermarket__title">Tiempo </h3>
+                            <p class="supermarket__description" id="caja1-tiempo"></p>
+
+                            <h3 class="supermarket__title">Dinero </h3>
+                            <p class="supermarket__description" id="caja1-dinero"></p>
+
+                            <div class="supermarket__cola" id="cola1">
+                                <h4 class="supermarket__subtitle">Cola 1 </h4>
+                            </div>
+                        </div>
+                        <br>
+                        <!-- CAJA 2 -->
+                        <div class="supermarket__caja-cerrada" id="caja2">
+                            <h3 class="supermarket__title">Caja 2</h3>
+                            <p class="supermarket__description" id="caja2-id"></p>
+
+                            <h3 class="supermarket__title">Estado </h3>
+                            <p class="supermarket__description" id="caja2-abierta"></p>
+
+                            <h3 class="supermarket__title">Saturación </h3>
+                            <p class="supermarket__description" id="caja2-libre"></p>
+
+                            <h3 class="supermarket__title">Cola </h3>
+                            <p class="supermarket__description" id="caja2-cola"></p>
+
+                            <h3 class="supermarket__title">Tiempo </h3>
+                            <p class="supermarket__description" id="caja2-tiempo"></p>
+
+                            <h3 class="supermarket__title">Dinero </h3>
+                            <p class="supermarket__description" id="caja2-dinero"></p>
+                            
+                            <div class="supermarket__cola" id="cola2">
+                                <h4 class="supermarket__subtitle">Cola 2 </h4>
+                            </div>
+                        </div>
+                        <br>
+                        <!-- CAJA 3 -->
+                        <div class="supermarket__caja-cerrada" id="caja3">
+                            <h3 class="supermarket__title">Caja 3</h3>
+                            <p class="supermarket__description" id="caja3-id"></p>
+
+                            <h3 class="supermarket__title">Estado </h3>
+                            <p class="supermarket__description" id="caja3-abierta"></p>
+
+                            <h3 class="supermarket__title">Saturación </h3>
+                            <p class="supermarket__description" id="caja3-libre"></p>
+
+                            <h3 class="supermarket__title">Cola </h3>
+                            <p class="supermarket__description" id="caja3-cola"></p>
+
+                            <h3 class="supermarket__title">Tiempo </h3>
+                            <p class="supermarket__description" id="caja3-tiempo"></p>
+
+                            <h3 class="supermarket__title">Dinero </h3>
+                            <p class="supermarket__description" id="caja3-dinero"></p>
+                            
+                            <div class="supermarket__cola" id="cola3">
+                                <h4 class="supermarket__subtitle">Cola 3 </h4>
+                            </div>
+                        </div>
+                        <br>
+                        <!-- CAJA 4 -->
+                        <div class="supermarket__caja-cerrada" id="caja4">
+                            <h3 class="supermarket__title">Caja 4</h3>
+                            <p class="supermarket__description" id="caja4-id"></p>
+
+                            <h3 class="supermarket__title">Estado </h3>
+                            <p class="supermarket__description" id="caja4-abierta"></p>
+
+                            <h3 class="supermarket__title">Saturación </h3>
+                            <p class="supermarket__description" id="caja4-libre"></p>
+
+                            <h3 class="supermarket__title">Cola </h3>
+                            <p class="supermarket__description" id="caja4-cola"></p>
+
+                            <h3 class="supermarket__title">Tiempo </h3>
+                            <p class="supermarket__description" id="caja4-tiempo"></p>
+
+                            <h3 class="supermarket__title">Dinero </h3>
+                            <p class="supermarket__description" id="caja4-dinero"></p>
+                            
+                            <div class="supermarket__cola" id="cola4">
+                                <h4 class="supermarket__subtitle">Cola 4 </h4>
+                            </div>
+                        </div>
+                        <br>
+                    </div>
+                    <!--==================== PANEL DE AVISO ====================-->
+                    <h3 class="panelAviso__title">Panel de movimientos</h3>
+                    <div class="panelAviso">
+                        <span id="panelAviso">
+                        </span>
+                    </div>
+
+                    <!--==================== LÍNEA DE COMANDO ====================-->
+                    <div class="supermarket__command-container" id="div-linea-comando">
+                        <h3 class="supermarket__title">Línea de comando</label>
+                        <input type="email" class="supermarket__input" id="lineaComando">
+                        <button id="btnLineaComando" class="button message__button">OK</button>
+                    </div>
+                </div>
+            </section>
+
+            <!--==================== PROMOCIONES ====================-->
+            <section class="giving section container" id="promociones">
+                <h2 class="section__title">
+                    Promociones disponibles
+                </h2>
+                <div class="giving__container grid" id="wrapperPromociones">
+                        
+                </div>
+            </section>
+            <!--==================== CATEGORÍAS ====================-->
+            <section class="giving section container"  id="categorias">
+                <h2 class="section__title">
+                    Nuestras secciones
+                    <p class="giving__description">Seguimos en constante crecimiento, estas son nuestras categorías</p>
+                </h2>
+                <div class="giving__container grid" id="wrapperGiving">
+                    <div class="giving__content">
+                        <img src="assets/img/categories/bakery.png" alt="" class="giving__img">
+                        <h3 class="giving__title">Panadería</h3>
+                        <p class="giving__description">Recién hecho todos los días</p>
+                    </div>
+
+                    <div class="giving__content">
+                        <img src="assets/img/categories/fruit.png" alt="" class="giving__img">
+                        <h3 class="giving__title">Futa y verdura</h3>
+                        <p class="giving__description">Productos nacionales de calidad</p>
+                    </div>
+
+                    <div class="giving__content">
+                        <br>
+                        <br>
+                        <img src="assets/img/categories/meat.png" alt="" class="giving__img">
+                        <h3 class="giving__title">Carnes y embutidos</h3>
+                        <p class="giving__description">Carne fresca seleccionada</p>
+                    </div>
+                    <div class="giving__content">
+                        <img src="assets/img/categories/fish.png" alt="" class="giving__img">
+                        <h3 class="giving__title">Pescado y marisco</h3>
+                        <p class="giving__description">Pescado fresco seleccionado</p>
+                    </div>
+
+                    <div class="giving__content">
+                        <img src="assets/img/categories/frozen.png" alt="" class="giving__img">
+                        <h3 class="giving__title">Congelados</h3>
+                        <p class="giving__description">Productos congelados en las mejores condiciones</p>
+                    </div>
+
+                    <div class="giving__content">
+                        <img src="assets/img/categories/prepared-plates.png" alt="" class="giving__img">
+                        <h3 class="giving__title">Platos preparados</h3>
+                        <p class="giving__description">Recién hechos todos los días</p>
+                    </div>
+                </div>
+            </section>
+
+            <!--==================== GIVING ====================-->
+            <section class="giving section container" id="giving">
+                <h2 class="section__title">
+                    Los regalos inesperados son los mejores
+                    <p class="giving__description">Por eso, te traemos ideas que pueden hacerle ilusión a esa persona especial.</p>
+                </h2>
+                <div class="giving__container grid" id="wrapperGiving">
+                    <div class="giving__content">
+                        <img src="assets/img/products/book.png" alt="" class="giving__img">
+                        <h3 class="giving__title">Libros</h3>
+                        <p class="giving__description">Alimenta la curiosidad a todas las edades</p>
+                    </div>
+
+                    <div class="giving__content">
+                        <img src="assets/img/products/phones.png" alt="" class="giving__img">
+                        <h3 class="giving__title">Tecnología</h3>
+                        <p class="giving__description">Siendo fieles a nuestra generación</p>
+                    </div>
+
+                    <div class="giving__content">
+                        <img src="assets/img/products/skincare2.png" alt="" class="giving__img">
+                        <h3 class="giving__title">Cuidado personal</h3>
+                        <p class="giving__description">Cuida tu piel de la polución diaria</p>
+                    </div>
+                </div>
+            </section>
+
+            <!--==================== CELEBRATE ====================-->
+            <section class="celebrate section container" id="celebrate">
+                <div class="celebrate__container grid">
+                    <div class="celebrate__data">
+                        <h2 class="section__title celebrate__title">
+                            Celebrémos la navidad entre todos
+                        </h2>
+                        <p class="celebrate__description">
+                            En Xmas Super hemos puesto en marcha una campaña para donar alimentos y otros productos de 
+                            primera necesidad a esas personas que más lo necesitan, ¿Te gustaría participar?  
+                        </p>
+                        <a href="https://www.granrecogidadealimentos.org/" class="button" target="_blank">Más información</a>
+                    </div>
+
+                    <img src="assets/img/xmas/people.png" alt="" class="celebrate__img">
+                </div>
+            </section>
+
+            <!--==================== GIFT ====================-->
+            <section class="gift section container" id="gift">
+                <h2 class="section__title">Destacados</h2>
+                <div class="gift__container grid">
+                    <article class="gift__card">
+                        <img src="assets/img/products/pan.png" alt="" class="gift__img">
+                        <i class="bx bx-heart gift__icon"></i>
+                        <div class="producto__titulo">
+                        <h3 class="gift__price">1.60€</h3>
+                        <h6>&nbsp;&nbsp;/ud.</h6>
+                        </div>
+                        <div class="proucto__titulo">
+                            <span class="gift__title">Pan 100% integral</span>
+                            <h6>Panadería</h6>
+                        </div>
+                    </article>
+                    <article class="gift__card">
+                        <img src="assets/img/products/tortitas.png" alt="" class="gift__img">
+                        <i class="bx bx-heart gift__icon"></i>
+
+                        <div class="producto__titulo">
+                            <h3 class="gift__price">2€</h3>
+                            <h6>&nbsp;&nbsp;/pack</h6>
+                        </div>
+                        <div class="proucto__titulo">
+                            <span class="gift__title">Tortitas</span>
+                            <h6>Preparados</h6>
+                        </div>
+                    </article>
+                    <article class="gift__card">
+                        <img src="assets/img/products/ramen.png" alt="" class="gift__img">
+                        <i class="bx bx-heart gift__icon"></i>
+
+                        <div class="producto__titulo">
+                            <h3 class="gift__price">5€</h3>
+                            <h6>&nbsp;&nbsp;/ud.</h6>
+                        </div>
+                        <div class="proucto__titulo">
+                            <span class="gift__title">Ramen</span>
+                            <h6>Preparados</h6>
+                        </div>
+                    </article>
+                </div>
+            </section>
+
+            <!--==================== NEW ====================-->
+            <section class="new section container" id="new">
+                <h2 class="section__title">Novedades</h2>
+
+                <div class="new__container">
+                    <div class="swiper new-swiper">
+                        <div class="swiper-wrapper">
+                            <article class="new__card swiper-slide">
+                                <div class="new__overlay"></div>
+
+                                <img src="assets/img/xmas/House.png" alt="" class="new__img">
+                                <h3 class="new__price">40€</h3>
+                                <span class="new__title">Casa de juguete</span>
+
+                                <button class="button new__button">
+                                    <i class='bx bx-heart new__icon'></i>
+                                </button>
+                            </article>
+
+                            <article class="new__card swiper-slide">
+                                <div class="new__overlay"></div>
+
+                                <img src="assets/img/products/perfume.png" alt="" class="new__img">
+                                <h3 class="new__price">95€</h3>
+                                <span class="new__title">Channel Nº 5</span>
+                                
+                                <button class="button new__button">
+                                    <i class='bx bx-heart new__icon'></i>
+                                </button>
+                            </article>
+
+                            <article class="new__card swiper-slide">
+                                <div class="new__overlay"></div>
+
+                                <img src="assets/img/products/perfume.png" alt="" class="new__img">
+                                <h3 class="new__price">95€</h3>
+                                <span class="new__title">Channel Nº 5</span>
+                                
+                                <button class="button new__button">
+                                    <i class='bx bx-heart new__icon'></i>
+                                </button>
+                            </article>
+
+                            <article class="new__card swiper-slide">
+                                <div class="new__overlay"></div>
+
+                                <img src="assets/img/products/cupcakes.png" alt="" class="new__img__cupc">
+                                <h3 class="new__price">2€</h3>
+                                <span class="new__title">Cupcakes</span>
+
+                                <button class="button new__button">
+                                    <i class='bx bx-heart new__icon'></i>
+                                </button>
+                            </article>
+
+                            <article class="new__card swiper-slide">
+                                <div class="new__overlay"></div>
+
+                                <img src="assets/img/products/perfume.png" alt="" class="new__img">
+                                <h3 class="new__price">95€</h3>
+                                <span class="new__title">Channel Nº 5</span>
+                                
+                                <button class="button new__button">
+                                    <i class='bx bx-heart new__icon'></i>
+                                </button>
+                            </article>
+
+                            <article class="new__card swiper-slide">
+                                <div class="new__overlay"></div>
+
+                                <img src="assets/img/products/galletas_pack.png" alt="" class="new__img__superhero">
+                                <h3 class="new__price">3.5€</h3>
+                                <span class="new__title">Galletas Superhero</span>
+
+                                <button class="button new__button">
+                                    <i class='bx bx-heart new__icon'></i>
+                                </button>
+                            </article>
+                        </div>
+
+                        <div class="swiper-pagination"></div>
+                    </div>
+                </div>
+            </section>
+            <!--==================== MESSAGE ====================-->
+            <section class="message section container" id="message">
+                <div class="message__container grid">
+                    <form action="" class="message__form">
+                        <h2 class="message__title">¡Suscríbete!</h2>
+                        <input type="email" placeholder="email" class="message__input">
+                        <button class="button message__button">¡Mantenme al tanto!</button>
+                    </form>
+                    <img src="assets/img/xmas/Letter.png" alt="" class="message__img">
+                </div>
+            </section>
+        </main>
+
+        <!--==================== FOOTER ====================-->
+        <footer class="footer section">
+            <div class="footer__container container grid">
+                <div>
+                    <a href="#" class="footer__logo">
+                        <img src="assets/img/xmas/Cooking_2.png" alt="" class="footer__logo-img">
+                        Xmas
+                    </a>
+
+                    <p class="footer__description">
+                        Vive estas navidades <br> con todo tu afecto y cariño
+                    </p>
+                </div>
+
+                <div>
+                    <h3 class="footer__title">Nuestros Servicios</h3>
+
+                    <ul class="footer__links">
+                        <li>
+                            <a href="#" class="footer__link">Precios</a>
+                        </li>
+                        <li>
+                            <a href="#" class="footer__link">Descuentos</a>
+                        </li>
+                        <li>
+                            <a href="#" class="footer__link">Forma de envío</a>
+                        </li>
+                    </ul>
+                </div>
+
+                <div>
+                    <h3 class="footer__title">Soporte</h3>
+
+                    <ul class="footer__links">
+                        <li>
+                            <a href="#" class="footer__link">FAQs</a>
+                        </li>
+                        <li>
+                            <a href="#" class="footer__link">Centro de Soporte</a>
+                        </li>
+                        <li>
+                            <a href="#" class="footer__link">Contáctanos</a>
+                        </li>
+                    </ul>
+                </div>
+
+                <div>
+                    <h3 class="footer__title">Disponible en</h3>
+
+                    <div class="footer__aviables">
+                        <img src="assets/img/bedimcode/aviable1.png" alt="" class="footer__aviable-img">
+                        <img src="assets/img/bedimcode/aviable2.png" alt="" class="footer__aviable-img">
+                    </div>
+                </div>
+
+                <img src="assets/img/bedimcode/footer1.png" alt="" class="footer__img1">
+                <img src="assets/img/bedimcode/footer2.png" alt="" class="footer__img2">
+            </div>
+
+            <span class="footer__copy">&#169;Luisa Blanco. All rights reserved.</span>
+        </footer>
+
+        <!--=============== SCROLL UP ===============-->
+        <a href="#" class="scrollup" id="scroll-up"> 
+            <i class='bx bx-up-arrow-alt scrollup__icon' ></i>
+        </a>
+
+        <!--=============== SCROLL REVEAL ===============-->
+        <script src="assets/js/scrollreveal.min.js" defer></script>
+
+        <!--=============== SWIPER JS ===============-->
+        <script src="assets/js/swiper-bundle.min.js" defer></script>
+
+        <!--=============== MAIN JS ===============-->
+        <script src="assets/js/main.js" defer></script>
+
+        <!--=============== SUPERMARKET JS ===============-->
+        <script src="assets/js/Caja.js"></script>
+        <script src="assets/js/Cliente.js"></script>
+        <script src="assets/js/Promocion.js"></script>
+        <script src="assets/js/Supermercado.js"></script>
+
+    </body>
+</html>
