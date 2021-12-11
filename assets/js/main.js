@@ -147,3 +147,7 @@ interval: es el tiempo que transcurre entre cada revelación
 origin: desde qué punto se inicia la animación 
 https://scrollrevealjs.org/api/interval.html
 */
+const fotoInicio = document.getElementById("fotoInicio"); 
+$("#fotoInicio").click(function(){
+    $(this).toggleClass("nuevaImagen"); 
+}); 

@@ -315,6 +315,10 @@ body.dark-theme {
   margin-bottom: var(--mb-2-5);
 }
 
+.nuevaImagen{
+  background-image: url(https://cdn1.iconfinder.com/data/icons/christmas-flat-4/60/023_-_Icicle-128.png);
+  
+}
 
 /*=============== BUTTONS ===============*/
 

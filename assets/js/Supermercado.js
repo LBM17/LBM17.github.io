@@ -622,7 +622,7 @@ btnLineaComando.addEventListener("click", () => {
   if (inputRegex == null) {
     divRegex.innerHTML += "Debe introducir el regex";
   } else {
-    var arrayRegex = inputRegex.split(" ");
+    var arrayRegex = inputRegex.split("-");
     switch (arrayRegex[0].toLowerCase()) {
       case "prom":
         console.log(arrayRegex);
