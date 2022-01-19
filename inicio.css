@@ -182,7 +182,7 @@ section .color:nth-child(3){
     border-bottom:1px solid rgba(255, 255, 255, 0.2);
     font-size: 16px; 
     letter-spacing: 1px; 
-    color: #fff;
+    color: rgb(0, 0, 0);
     box-shadow: 0 5px 15px rgba(0, 0, 0, 0.05);
 }
 
