@@ -5,7 +5,7 @@ function getMousePosition(event) {
     if (event.clientY < 100) {
       img.style.top = `0`;
     } else {
-      img.style.top = `calc(${event.clientY}px - 100px)`;
+      img.style.marginTop = `calc(${event.clientY}px - 100px)`;
     }
   }
   
